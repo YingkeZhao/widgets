@@ -1,0 +1,46 @@
+{
+  "WRAPI": {
+    "base_url"          : "http://api.goldwind.com.cn/",
+    "merra2_download"   : "merra2Download",
+	"merra2_select" 	: "selectFourPoints/merra2data",
+	"merra2_download_params"		: "SWGNT,PS,T10M,U10M,V10M",
+	"timezone"			: 8,
+	"line_offset"		: 12,
+	"start_date"		: "1980-01-01",
+	"end_date"			: "2017-12-31",
+	"min_lon"			: -180.0,
+	"max_lon"			: 179.375,
+	"min_lat"			: -90.0,
+	"max_lat"			: 90.0,
+    "timeout"       	: 300
+  },
+  "headers": {
+	"datetime"	: "Date/time",
+	"SWGNT"		: "swgnt",
+	"PS"		: "Pressure_0m [Pa]",
+	"T10M"		: "Temperature_10m [degrees K]",
+	"U10M"		: "East_speed_10m [m/s]",
+	"V10M"		: "North_speed_10m [m/s]"
+  },
+  "units": {
+  	"SWGNT"		: "w/m2",
+	"PS"		: "Pa",
+	"T10M"		: "K",
+	"U10M"		: "m/s",
+	"V10M"		: "m/s"
+  },
+  "weights": {
+    "total": 20,
+    "dry_bulb_tmp_max"        : 1,
+    "dry_bulb_tmp_min"        : 1,
+    "dry_bulb_tmp_mean"       : 2,
+    "dew_point_tmp_max"       : 1,
+    "dew_point_tmp_min"       : 1,
+    "dew_point_tmp_mean"      : 2,
+    "wind_velocity_max"       : 1,
+    "wind_velocity_mean"      : 1,
+    "global_horiz_radiation"  : 5,
+    "direct_normal_radiation" : 5
+  },
+  "solar_dir": ""
+}
